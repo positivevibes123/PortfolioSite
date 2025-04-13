@@ -15,10 +15,10 @@ export default {
     <div id="home" class="flex items-center justify-center h-screen bg-white dark:bg-gray-900">
       <div class="grid grid-cols-1">
         <div>
-          <p class="text-9xl font-medium">Hello!</p>
+          <p class="inline-block animate-typewriter w-0 overflow-hidden whitespace-nowrap border-r text-9xl">Hi, I'm Daniel.</p>
         </div>
         <div>
-          <p class="inline-block animate-typewriter w-0 overflow-hidden whitespace-nowrap border-r text-2xl">My name is Daniel.</p>
+          <p class="text-2xl font-medium">Passionate in software engineering</p>
         </div>
       </div>
     </div>
