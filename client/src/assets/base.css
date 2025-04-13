@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-typewriter: typewriter 1s steps(20, end) forwards, blink 0.5s steps(1) infinite;
+
+  @keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+  @keyframes blink {
+    0% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: var(--color-primary);
+    }
+    100% {
+      border-color: transparent;
+    }
+  }
+}

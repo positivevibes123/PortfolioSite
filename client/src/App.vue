@@ -1,9 +1,9 @@
 <script setup>
-import Home from "./components/Home.vue";
+import Page from "./components/Page.vue";
 </script>
 
 <template>
   <div id="app">
-    <Home />
+    <Page/>
   </div>
 </template>
