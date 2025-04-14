@@ -45,10 +45,7 @@ export default {
             >
               Java
             </h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
+            <i class="fab fa-java fa-3x"></i>
           </a>
         </div>
         <div>
@@ -61,10 +58,7 @@ export default {
             >
               JavaScript
             </h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
+            <i class="fab fa-js fa-3x"></i>
           </a>
         </div>
         <div>
@@ -77,7 +71,7 @@ export default {
             >
               CSS
             </h5>
-            <i class="fa-brands fa-css3 fa-3x"></i>
+            <i class="fab fa-css3 fa-3x"></i>
           </a>
         </div>
         <div>
