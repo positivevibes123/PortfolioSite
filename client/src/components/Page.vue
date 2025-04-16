@@ -10,27 +10,27 @@ export default {
 </script>
 
 <template>
-  <div id="main-page" class="text-black dark:text-white">
+  <div id="main-page" class="text-black dark:text-white overflow-x-hidden">
     <Navbar />
     <div
       id="home"
-      class="flex items-center justify-center h-screen bg-white dark:bg-gray-900"
+      class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900"
     >
       <div>
         <p
-          class="inline-block animate-typewriter w-0 overflow-hidden whitespace-nowrap border-r text-9xl"
+          class="relative m-auto animate-typewriter overflow-hidden whitespace-nowrap border-r sm:text-2xl md:text-5xl lg:text-9xl"
         >
           Hi, I'm Daniel.
         </p>
-        <p class="text-2xl font-medium">Passionate in software engineering</p>
       </div>
+     <p class="text-2xl font-medium">Passionate in software engineering</p>
     </div>
     <div
       id="about"
       class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900"
     >
       <p class="text-8xl font-medium">About</p>
-      <p class="text-2xl font-medium">
+      <p class="text-2xl text-center font-medium">
         I am a software engineer with a passion for building web applications.
       </p>
 

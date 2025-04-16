@@ -5,10 +5,10 @@
 
   @keyframes typewriter {
     0% {
-      width: 0;
+      max-width: 0;
     }
     100% {
-      width: 100%;
+      max-width: 1000px;
     }
   }
   @keyframes blink {
