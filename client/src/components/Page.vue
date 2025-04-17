@@ -29,8 +29,8 @@ export default {
       id="about"
       class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900"
     >
-      <p class="text-8xl font-medium">About</p>
-      <p class="text-2xl text-center font-medium">
+      <p class="text-8xl font-medium mb-8">About</p>
+      <p class="text-2xl text-center font-medium mb-8">
         I am a software engineer with a passion for building web applications.
       </p>
 
