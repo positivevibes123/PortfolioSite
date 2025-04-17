@@ -88,5 +88,21 @@ export default {
     <div id="projects" class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900">
       <p class="text-8xl font-medium">Projects</p>
     </div>
+    <div id="contact" class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900">
+      <p class="text-8xl font-medium mb-8">Contact</p>
+      <p class="text-2xl text-center font-medium mb-8">
+        Want to connect? Here are several different ways you can contact me!
+      </p>
+      <div>
+        <i class="fa fa-envelope fa-3x"></i>
+        <a href="mailto:damoruso321@gmail.com">Email</a>
+        <i class="fab fa-github fa-3x"></i>
+        <a href="https://github.com/positivevibes123">Github</a>
+        <i class="fab fa-linkedin fa-3x"></i>
+        <a href="https://www.linkedin.com/in/danielamoruso/">LinkedIn</a>
+        <i class="fas fa-file fa-3x"></i>
+        <a href="https://github.com/positivevibes123">Resume</a>
+      </div>
+    </div>
   </div>
 </template>
