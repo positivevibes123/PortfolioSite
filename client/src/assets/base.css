@@ -2,6 +2,7 @@
 
 @theme {
   --animate-typewriter: typewriter 1s steps(20, end) forwards, blink 0.5s steps(1) infinite;
+  --animate-fadein: fadein 1s ease-in-out forwards;
 
   @keyframes typewriter {
     0% {
@@ -20,6 +21,14 @@
     }
     100% {
       border-color: transparent;
+    }
+  }
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }

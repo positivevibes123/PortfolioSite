@@ -1,12 +1,17 @@
-<script>
+<script setup lang="ts">
 import Navbar from "./Navbar.vue";
+import { useElementVisibility } from '@vueuse/core'
+import { useTemplateRef } from 'vue'
+import { onMounted } from 'vue'
 
-export default {
-  name: "Page",
-  components: {
-    Navbar,
-  },
-};
+const target = useTemplateRef<HTMLDivElement>('target')
+const targetIsVisible = useElementVisibility(target)
+
+onMounted(() => {
+  // Just to verify if target is bound correctly
+  console.log('target:', target.value)
+  console.log(targetIsVisible.value)
+})
 </script>
 
 <template>
@@ -29,12 +34,12 @@ export default {
       id="about"
       class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900"
     >
-      <p class="text-8xl font-medium mb-8">About</p>
+      <p class="text-8xl font-medium mb-8" ref="target">About</p>
       <p class="text-2xl text-center font-medium mb-8">
         I am a software engineer with a passion for building web applications.
       </p>
 
-      <div class="grid grid-cols-4 gap-8">
+      <div :class="['grid grid-cols-4 gap-8 opacity-0', targetIsVisible ? ' animate-fadein' : ' ']">
         <div>
           <div
             class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
