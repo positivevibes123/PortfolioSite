@@ -2,16 +2,9 @@
 import Navbar from "./Navbar.vue";
 import { useElementVisibility } from '@vueuse/core'
 import { useTemplateRef } from 'vue'
-import { onMounted } from 'vue'
 
 const target = useTemplateRef<HTMLDivElement>('target')
 const targetIsVisible = useElementVisibility(target)
-
-onMounted(() => {
-  // Just to verify if target is bound correctly
-  console.log('target:', target.value)
-  console.log(targetIsVisible.value)
-})
 </script>
 
 <template>
