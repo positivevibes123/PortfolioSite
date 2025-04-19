@@ -99,14 +99,15 @@ onMounted(() => {
         Want to connect? Here are several different ways you can contact me!
       </p>
       <div>
-        <i class="fa fa-envelope fa-3x"></i>
-        <a href="mailto:damoruso321@gmail.com">Email</a>
-        <i class="fab fa-github fa-3x"></i>
-        <a href="https://github.com/positivevibes123">Github</a>
-        <i class="fab fa-linkedin fa-3x"></i>
-        <a href="https://www.linkedin.com/in/danielamoruso/">LinkedIn</a>
-        <i class="fas fa-file fa-3x"></i>
-        <a href="https://github.com/positivevibes123">Resume</a>
+        <a href="mailto:damoruso321@gmail.com"> 
+          <i class="fa fa-envelope fa-3x px-8"></i>
+        </a>
+        <a href="https://github.com/positivevibes123">
+          <i class="fab fa-github fa-3x px-8"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/danielamoruso/">
+          <i class="fab fa-linkedin fa-3x px-8"></i>
+        </a>
       </div>
     </div>
   </div>
