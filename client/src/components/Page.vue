@@ -92,6 +92,26 @@ onMounted(() => {
     </div>
     <div id="projects" class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900">
       <p class="text-8xl font-medium">Projects</p>
+      <div class="mr-auto ml-15">
+        <p class="text-2xl">Portfolio Site</p>
+        <p>Web Application</p>
+        <p>Skills Used: Javascript, HTML, CSS, Vue, TailwindCSS</p>
+        <p>
+          <a href="https://github.com/positivevibes123/positivevibes123.github.io">
+          <i class="fab fa-github fa-3x px-8"></i>
+          </a>
+        </p>
+      </div>
+      <div class="mr-auto ml-15">
+        <p class="text-2xl">Connect Four Minimax</p>
+        <p>Java Application</p>
+        <p>Skills Used: Java, JavaFX</p>
+        <p>
+          <a href="https://github.com/positivevibes123/AIProject">
+          <i class="fab fa-github fa-3x px-8"></i>
+          </a>
+        </p>
+      </div>
     </div>
     <div id="contact" class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900">
       <p class="text-8xl font-medium mb-8">Contact</p>
