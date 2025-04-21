@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import Navbar from "./Navbar.vue";
-import { useElementVisibility } from '@vueuse/core'
-import { useTemplateRef } from 'vue'
+import { useElementVisibility } from "@vueuse/core";
+import { useTemplateRef } from "vue";
 
-const target = useTemplateRef<HTMLDivElement>('target')
-const targetIsVisible = useElementVisibility(target)
+const aboutTarget = useTemplateRef<HTMLDivElement>("target1");
+const aboutIsVisible = useElementVisibility(aboutTarget);
+
+const projectsTarget = useTemplateRef<HTMLDivElement>("target2");
+const projectsIsVisible = useElementVisibility(projectsTarget);
 </script>
 
 <template>
@@ -21,18 +24,23 @@ const targetIsVisible = useElementVisibility(target)
           Hi, I'm Daniel.
         </p>
       </div>
-     <p class="text-2xl font-medium">Passionate in software engineering</p>
+      <p class="text-2xl font-medium">Passionate in software engineering</p>
     </div>
     <div
       id="about"
       class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900"
     >
-      <p class="text-8xl font-medium mb-8" ref="target">About</p>
+      <p class="text-8xl font-medium mb-8" ref="target1">About</p>
       <p class="text-2xl text-center font-medium mb-8">
         I am a software engineer with a passion for building web applications.
       </p>
 
-      <div :class="['grid grid-cols-4 gap-8 opacity-0', targetIsVisible ? ' animate-fadein' : ' ']">
+      <div
+        :class="[
+          'grid grid-cols-4 gap-8 opacity-0',
+          aboutIsVisible ? ' animate-fadein' : ' ',
+        ]"
+      >
         <div>
           <div
             class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
@@ -83,36 +91,46 @@ const targetIsVisible = useElementVisibility(target)
         </div>
       </div>
     </div>
-    <div id="projects" class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900">
-      <p class="text-8xl font-medium">Projects</p>
-      <div class="mr-auto ml-15">
-        <p class="text-2xl">Portfolio Site</p>
-        <p>Web Application</p>
-        <p>Skills Used: Javascript, HTML, CSS, Vue, TailwindCSS</p>
-        <p>
-          <a href="https://github.com/positivevibes123/positivevibes123.github.io">
+    <div
+      id="projects"
+      class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900"
+    >
+      <p class="text-8xl font-medium mb-8" ref="target2" >Projects</p>
+      <div :class="['grid grid-cols-2', projectsIsVisible ? 'animate-fadein' : '']">
+        <div
+          class="m-8 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+        >
           <i class="fab fa-github fa-3x px-8"></i>
-          </a>
-        </p>
-      </div>
-      <div class="mr-auto ml-15">
-        <p class="text-2xl">Connect Four Minimax</p>
-        <p>Java Application</p>
-        <p>Skills Used: Java, JavaFX</p>
-        <p>
-          <a href="https://github.com/positivevibes123/AIProject">
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+            Web Application
+          </h5>
+          <p>Skills Used: Javascript, HTML, CSS, Vue, TailwindCSS</p>
+        </div>
+        <div
+          class="m-8 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+        >
           <i class="fab fa-github fa-3x px-8"></i>
-          </a>
-        </p>
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+          Connect Four Minimax
+          </h5>
+          <p>Skills Used: Java, JavaFX</p>
+        </div>
       </div>
     </div>
-    <div id="contact" class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900">
+    <div
+      id="contact"
+      class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900"
+    >
       <p class="text-8xl font-medium mb-8">Contact</p>
       <p class="text-2xl text-center font-medium mb-8">
         Want to connect? Here are several different ways you can contact me!
       </p>
       <div>
-        <a href="mailto:damoruso321@gmail.com"> 
+        <a href="mailto:damoruso321@gmail.com">
           <i class="fa fa-envelope fa-3x px-8"></i>
         </a>
         <a href="https://github.com/positivevibes123">
