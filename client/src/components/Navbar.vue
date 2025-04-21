@@ -35,7 +35,7 @@ const isOpen = ref(false)
           />
         </svg>
       </button>
-      <div v-show="isOpen" class="w-full md:block md:w-auto" id="navbar-dropdown">
+      <div :class="isOpen ? 'block w-full md:block md:w-auto' : 'hidden md:block md:w-auto'" id="navbar-dropdown">
         <ul
           class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
