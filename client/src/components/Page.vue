@@ -96,7 +96,7 @@ const projectsIsVisible = useElementVisibility(projectsTarget);
       class="flex flex-col items-center justify-center h-screen bg-white dark:bg-gray-900"
     >
       <p class="text-8xl font-medium mb-8" ref="target2" >Projects</p>
-      <div :class="['grid grid-cols-2', projectsIsVisible ? 'animate-fadein' : '']">
+      <div :class="['grid grid-cols-2 opacity-0', projectsIsVisible ? 'animate-fadein' : '']">
         <div
           class="m-8 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
         >
